@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<input type="number" id="nhap" value="0" >
+<input id="upbtn" type="button"  value="up" onclick="handler('up')">
+<input id="downbtn" type="button" value="down" onclick="handler('down')">
+<script>
+  function handler(val) {
+      let num_val = document.getElementById("nhap").value;
+      if (val == 'up'){
+          document.getElementById("nhap").value= parseInt(num_val) + 2}
+      else if (val == 'down') {
+          document.getElementById("nhap").value = parseInt(num_val) - 2
+      }
+
+
+
+  }
+</script>
+</body>
+</html>
